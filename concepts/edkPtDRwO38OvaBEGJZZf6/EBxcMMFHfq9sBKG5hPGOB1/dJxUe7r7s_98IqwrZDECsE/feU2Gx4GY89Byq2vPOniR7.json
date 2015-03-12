@@ -1,0 +1,16 @@
+{
+  "uri" : "local://feU2Gx4GY89Byq2vPOniR7/",
+  "name" : "Test Case 1",
+  "category" : "",
+  "parent" : "local://dJxUe7r7s_98IqwrZDECsE/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "a",
+    "expr" : {
+      "script" : "$cjs(\"local://feU2Gx4GY89Byq2vPOniR7/\");"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

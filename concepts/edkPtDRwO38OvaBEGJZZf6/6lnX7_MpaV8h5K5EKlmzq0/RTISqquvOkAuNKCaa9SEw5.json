@@ -1,0 +1,48 @@
+{
+  "uri" : "local://RTISqquvOkAuNKCaa9SEw5/",
+  "name" : "Test Binding",
+  "category" : "",
+  "parent" : "local://6lnX7_MpaV8h5K5EKlmzq0/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_testBinding_new_lv_boolean_mandate",
+    "expr" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "_testBinding_lv_number",
+    "expr" : {
+      "num" : 0
+    }
+  }, {
+    "name" : "_testBinding_lv_json",
+    "expr" : {
+      "json" : { }
+    }
+  }, {
+    "name" : "_testBinding_lv_concept",
+    "expr" : {
+      "script" : "return null;"
+    }
+  }, {
+    "name" : "_testBinding_new_lv_string_mandate",
+    "expr" : {
+      "str" : ""
+    }
+  }, {
+    "name" : "testBinding",
+    "expr" : {
+      "concept" : "local://6lnX7_MpaV8h5K5EKlmzq0/",
+      "bindings" : {
+        "new_lv_boolean_mandate" : "_testBinding_new_lv_boolean_mandate",
+        "lv_number" : "_testBinding_lv_number",
+        "lv_json" : "_testBinding_lv_json",
+        "lv_concept" : "_testBinding_lv_concept",
+        "new_lv_string_mandate" : "_testBinding_new_lv_string_mandate"
+      }
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

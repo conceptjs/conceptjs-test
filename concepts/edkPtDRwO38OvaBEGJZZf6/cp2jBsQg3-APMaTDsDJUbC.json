@@ -1,0 +1,16 @@
+{
+  "uri" : "local://cp2jBsQg3-APMaTDsDJUbC/",
+  "name" : "Debugger Test 4",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "longstring",
+    "expr" : {
+      "str" : "Looking for symbol in symbol,name,atomicNumber,atomicWeight,wikipediaUrl,imageUrl,wikiDataID viewmodel.js:2922\n\nLooking for name in symbol,name,atomicNumber,atomicWeight,wikipediaUrl,imageUrl,wikiDataID viewmodel.js:2922\n\nLooking for atomicNumber in symbol,name,atomicNumber,atomicWeight,wikipediaUrl,imageUrl,wikiDataID viewmodel.js:2922\n\nLooking for atomicWeight in symbol,name,atomicNumber,atomicWeight,wikipediaUrl,imageUrl,wikiDataID viewmodel.js:2922\n\nLooking for wikipediaUrl in symbol,name,atomicNumber,atomicWeight,wikipediaUrl,imageUrl,wikiDataID viewmodel.js:2922\nLooking for imageUrl in symbol,name,atomicNumber,atomicWeight,wikipediaUrl,imageUrl,wikiDataID viewmodel.js:2922\nLooking for wikiDataID in symbol,name,atomicNumber,atomicWeight,wikipediaUrl,imageUrl,wikiDataID viewmodel.js:2922\nself.pstub:{}, puri:local://QyjQvy11Ab840a2XZl_Mx8/celement/atomicWeight/, isRoot:false, forceDebug:undefined, status:V viewmodel.js:2985\nadd binding items with existing stub viewmodel.js:2940\ndisplay value panel: \"70\" viewmodel.js:2944\nself.pstub:{}, puri:local://QyjQvy11Ab840a2XZl_Mx8/celement/wikipediaUrl/, isRoot:false, forceDebug:undefined, status:V viewmodel.js:2985\nadd binding items with existing stub viewmodel.js:2940\ndisplay value panel: \"\" viewmodel.js:2944\nself.pstub:{}, puri:local://QyjQvy11Ab840a2XZl_Mx8/celement/imageUrl/, isRoot:false, forceDebug:undefined, status:V viewmodel.js:2985\nadd binding items with existing stub viewmodel.js:2940\ndisplay value panel: \"\" viewmodel.js:2944\nself.pstub:{}, puri:local://QyjQvy11Ab840a2XZl_Mx8/celement/wikiDataID/, isRoot:false, forceDebug:undefined, status:V viewmodel.js:2985\nadd binding items with existing stub viewmodel.js:2940\ndisplay value panel: \"Q123\" viewmodel.js:2944\nload concept stub, url: http://192.168.1.2:8083/value/conceptslocal://QyjQvy11Ab840a2XZl_Mx8/celement/-m_jbKs409s86K4IBVBn3EB/ concept.js:795\nGET http://192.168.1.2:8083/value/conceptslocal://QyjQvy11Ab840a2XZl_Mx8/celement/-m_jbKs409s86K4IBVBn3EB/ 400 (Bad Request) jquery-1.8.3.js:8441\nCould not load stub local://QyjQvy11Ab840a2XZl_Mx8/celement/-m_jbKs409s86K4IBVBn3EB/ concept.js:817\nUncaught Error: Could not load concept  stub for local://QyjQvy11Ab840a2XZl_Mx8/celement/-m_jbKs409s86K4IBVBn3EB/, status:error, error:Bad Request concept.js:827\nurl: http://192.168.1.2:8082/def/concepts/common/test/ concept.js:221\nurl: http://192.168.1.2:8082/def/concepts?puri=%2Fcommon%2Ftest%2Fcp2jBsQg3-APMaTDsDJUbC%2F&simplify=true. mode: client concept.js:605\nasyncCall:true concept.js:615\nurl: http://192.168.1.2:8082/def/conceptslocal://cp2jBsQg3-APMaTDsDJUbC/ "
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

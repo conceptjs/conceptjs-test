@@ -1,0 +1,16 @@
+{
+  "uri" : "local://rE_tiq6oBCBIZKuI6nXDu7/",
+  "name" : "Simple Concept",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "testString",
+    "expr" : {
+      "str" : "test"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

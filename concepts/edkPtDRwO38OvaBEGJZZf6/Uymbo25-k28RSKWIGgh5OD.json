@@ -1,0 +1,16 @@
+{
+  "uri" : "local://Uymbo25-k28RSKWIGgh5OD/",
+  "name" : "Test Search",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "testSearch",
+    "expr" : {
+      "script" : "var matches = $cjs.search({\n          uri: \"/common/core/nXFwelpDRVA4faZ54D1kf8/\",\n          ruri: \"/sridharcheema/fork-a-wiki/\",\n          queryJson: { \n              \"match\" : {\n                  \"formattedName\" : \"quick markdown example\"\n              }\n          },\n          size: 2\n      });\n      \nconsole.log(\"search result:\"+JSON.stringify(matches));"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

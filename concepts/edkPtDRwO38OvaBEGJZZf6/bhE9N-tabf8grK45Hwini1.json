@@ -1,0 +1,96 @@
+{
+  "uri" : "local://bhE9N-tabf8grK45Hwini1/",
+  "name" : "DebuggerError vb lambda isa error",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "tboolean",
+    "expr" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "tnumber",
+    "expr" : {
+      "num" : 12
+    }
+  }, {
+    "name" : "tstring",
+    "expr" : {
+      "str" : "test string"
+    }
+  }, {
+    "name" : "tvariable",
+    "expr" : {
+      "lookup" : "tstring",
+      "sub" : {
+        "concept" : "home"
+      }
+    }
+  }, {
+    "name" : "tjson",
+    "expr" : {
+      "json" : {
+        "foo" : "bar"
+      }
+    }
+  }, {
+    "name" : "_errorConc_foo",
+    "expr" : {
+      "str" : "bar"
+    }
+  }, {
+    "name" : "errorConc",
+    "expr" : {
+      "concept" : "local://UX-NpRLYUc9WUqoFe3vpeD/",
+      "bindings" : {
+        "foo" : "_errorConc_foo"
+      }
+    }
+  }, {
+    "name" : "nullConc",
+    "expr" : {
+      "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/"
+    }
+  }, {
+    "name" : "_testConc_a",
+    "expr" : {
+      "str" : "foo"
+    }
+  }, {
+    "name" : "_testConc_b",
+    "expr" : {
+      "num" : 21
+    }
+  }, {
+    "name" : "testConc",
+    "expr" : {
+      "concept" : "local://1z2KmLrJ-PAOsKYjf03da9/",
+      "bindings" : {
+        "a" : "_testConc_a",
+        "b" : "_testConc_b"
+      }
+    }
+  }, {
+    "name" : "testConc2",
+    "expr" : {
+      "concept" : "local://7W1izv7GKL9Ajqik9XK_mE/"
+    }
+  }, {
+    "name" : "testConc3",
+    "expr" : {
+      "lookup" : "binding",
+      "sub" : {
+        "lookup" : "testConc2",
+        "sub" : {
+          "concept" : "home"
+        }
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "errorConc"
+  } ],
+  "isLambda" : false
+}

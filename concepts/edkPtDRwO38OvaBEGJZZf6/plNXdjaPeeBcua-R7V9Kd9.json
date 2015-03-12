@@ -1,0 +1,19 @@
+{
+  "uri" : "local://plNXdjaPeeBcua-R7V9Kd9/",
+  "name" : "DebuggerError syntax errorlambda",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "a",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  } ],
+  "vars" : [ {
+    "name" : "error_script",
+    "expr" : {
+      "script" : "//this is an syntax error\n\nif (true){\n    console.log(\"true!\";"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : true
+}

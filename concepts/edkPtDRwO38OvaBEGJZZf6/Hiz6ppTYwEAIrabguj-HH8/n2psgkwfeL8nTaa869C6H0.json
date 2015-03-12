@@ -1,0 +1,54 @@
+{
+  "uri" : "local://n2psgkwfeL8nTaa869C6H0/",
+  "name" : "Proxy Method of Anchor Concept",
+  "category" : "",
+  "parent" : "local://Hiz6ppTYwEAIrabguj-HH8/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "a",
+    "expr" : {
+      "str" : "hij"
+    }
+  }, {
+    "name" : "b",
+    "expr" : {
+      "num" : 456
+    }
+  }, {
+    "name" : "c",
+    "expr" : {
+      "bool" : false
+    }
+  }, {
+    "name" : "d",
+    "expr" : {
+      "json" : {
+        "foo" : "tar"
+      }
+    }
+  }, {
+    "name" : "test_scope_script",
+    "expr" : {
+      "script" : "//test access scope\n\n//console.logInfo(\"should not access:\" +$cjs.defn['local://n2psgkwfeL8nTaa869C6H0/']);\n\n//console.logInfo(\"should not see this:\" + _mode);"
+    }
+  }, {
+    "name" : "html",
+    "expr" : {
+      "str" : "<b>Invoke Proxy Method to change var values:</b>\n<ul>\n    <li>invoke updateA, result of a is <span id=\"result1\"></span>\n    <li>invoke updateAll, result of all vars are <span id=\"result2\"></span>\n    <li>invoke updateWithReturn, return value is <span id=\"result3\"></span>\n    <li>invoke updateD, result of d is <span id=\"result4\"></span>\n</ul>\n<script>\n    $cjs('local://n2psgkwfeL8nTaa869C6H0/').execute('updateA', ['def']);\n    $cjs.clearCache();\n    $('#result1').text($cjs('local://n2psgkwfeL8nTaa869C6H0/').lookup('a').val());\n    $cjs('local://n2psgkwfeL8nTaa869C6H0/').execute('updateAll', [{\"a\" : \"hij\", \"b\" : 456, \"c\" : false} ]);\n     $cjs.clearCache();\n    var stub = $cjs('local://n2psgkwfeL8nTaa869C6H0/');\n    $('#result2').text(stub.lookup('a').val() + \",\" + stub.lookup('b').val().toString() + \",\" +stub.lookup('c').val().toString() );\n    var returnVal = $cjs('local://n2psgkwfeL8nTaa869C6H0/').execute('methodWReturn', ['a', 1, true, {\"foo\" : \"bar\"} ]);\n     $('#result3').text(JSON.stringify(returnVal));\n    \n$cjs('local://n2psgkwfeL8nTaa869C6H0/').execute('updateD', [{\"foo\" : \"tar\"}]);\n    $cjs.clearCache();\n    $('#result4').text(JSON.stringify($cjs('local://n2psgkwfeL8nTaa869C6H0/').lookup('d').val()));\n</script>"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "bindings" : {
+        "html" : "html"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false,
+  "activeScript" : "{\n\tupdateA : function(newA){\n\t\thome.prop(\"a\", newA);\n\t},    \n\t    \n\tupdateAll : function(newObj){\n\t\thome.prop(\"a\", (newObj.a));\n\t\thome.prop(\"b\", (newObj.b));\n\t\thome.prop(\"c\", (newObj.c));\n\t},\n\t    \n\tmethodWReturn : function(str, num, boolValue, objectVal){\n\t\tvar returnStr = str + \":\" + num.toString() + \":\" + boolValue.toString() + \":\" + JSON.stringify(objectVal);\n\t\treturn returnStr;\n\t},\n\t\n\tinvalidUpdate : function(newA){\n\t\t$cjs(\"/test_user2/default/ims1MZM7TV9sp4L7MNfEq7/\").prop(\"a\", newA);\n\t},\n\t\n\tupdateD : function(newD){\n\t\thome.prop(\"d\", newD);\n\t}\n}"
+}

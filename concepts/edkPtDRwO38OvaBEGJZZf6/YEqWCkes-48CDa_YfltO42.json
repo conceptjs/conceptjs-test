@@ -1,0 +1,70 @@
+{
+  "uri" : "local://YEqWCkes-48CDa_YfltO42/",
+  "name" : "UI Test",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "test one",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
+    "default" : {
+      "num" : 12
+    }
+  } ],
+  "vars" : [ {
+    "name" : "test two",
+    "expr" : {
+      "json" : { }
+    }
+  }, {
+    "name" : "test three",
+    "expr" : {
+      "concept" : "local://KEnn0dYvUh8WMKpUtyBiwE/"
+    }
+  }, {
+    "name" : "testFour",
+    "expr" : {
+      "num" : 13
+    }
+  }, {
+    "name" : "testFive",
+    "expr" : {
+      "concept" : "local://KEnn0dYvUh8WMKpUtyBiwE/"
+    }
+  }, {
+    "name" : "testThree",
+    "expr" : {
+      "num" : 0
+    }
+  }, {
+    "name" : "_testBound_foo",
+    "expr" : {
+      "num" : 12
+    }
+  }, {
+    "name" : "_testBound_bar",
+    "expr" : {
+      "str" : "sdfasdf",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "testBound",
+    "expr" : {
+      "concept" : "local://6hAAD8ExGoApPaC6nWHyP0/",
+      "bindings" : {
+        "foo" : "_testBound_foo",
+        "bar" : "_testBound_bar"
+      }
+    }
+  }, {
+    "name" : "testInvalidLookup",
+    "expr" : {
+      "lookup" : "testFour",
+      "sub" : {
+        "concept" : "home"
+      }
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : true
+}

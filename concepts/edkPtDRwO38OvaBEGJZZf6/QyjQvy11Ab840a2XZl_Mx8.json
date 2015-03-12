@@ -1,0 +1,78 @@
+{
+  "uri" : "local://QyjQvy11Ab840a2XZl_Mx8/",
+  "name" : "1 Debugger test",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "tboolean",
+    "expr" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "tnumber",
+    "expr" : {
+      "num" : 12
+    }
+  }, {
+    "name" : "tstring",
+    "expr" : {
+      "str" : "test string"
+    }
+  }, {
+    "name" : "tvariable",
+    "expr" : {
+      "lookup" : "tstring",
+      "sub" : {
+        "concept" : "home"
+      }
+    }
+  }, {
+    "name" : "tjson",
+    "expr" : {
+      "json" : {
+        "foo" : "bar"
+      }
+    }
+  }, {
+    "name" : "_celement_symbol",
+    "expr" : {
+      "str" : "Fe"
+    }
+  }, {
+    "name" : "_celement_name",
+    "expr" : {
+      "str" : "Iron"
+    }
+  }, {
+    "name" : "_celement_atomicNumber",
+    "expr" : {
+      "num" : 35
+    }
+  }, {
+    "name" : "_celement_atomicWeight",
+    "expr" : {
+      "str" : "70"
+    }
+  }, {
+    "name" : "_celement_wikiDataID",
+    "expr" : {
+      "str" : "Q123"
+    }
+  }, {
+    "name" : "celement",
+    "expr" : {
+      "concept" : "/common/core/ylI2qgxB3YACI415AGovqF/",
+      "bindings" : {
+        "symbol" : "_celement_symbol",
+        "name" : "_celement_name",
+        "atomicNumber" : "_celement_atomicNumber",
+        "atomicWeight" : "_celement_atomicWeight",
+        "wikiDataID" : "_celement_wikiDataID"
+      }
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

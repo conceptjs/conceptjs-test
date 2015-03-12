@@ -1,0 +1,26 @@
+{
+  "uri" : "local://7W1izv7GKL9Ajqik9XK_mE/",
+  "name" : "Debugger Test 3",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "baz",
+    "expr" : {
+      "str" : "test"
+    }
+  }, {
+    "name" : "bar",
+    "expr" : {
+      "num" : 12
+    }
+  }, {
+    "name" : "foo",
+    "expr" : {
+      "script" : "return fasdfasdf;"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

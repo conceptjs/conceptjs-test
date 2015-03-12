@@ -1,0 +1,27 @@
+{
+  "uri" : "local://WULAux8DfMA89aXKVadmOB/",
+  "name" : "Test cross domain access",
+  "category" : "",
+  "parent" : "local://EBxcMMFHfq9sBKG5hPGOB1/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "htmlTemplate",
+    "expr" : {
+      "str" : "<html>\n\n<body>\n\n<div id=\"result\">\n    \n</div>\n\n<script>\n    $.get(\"http://192.168.1.5:8086/view/commmon/core/\", function(data){\n            $(\"#result\").text(data);\n        })\n</script>\n\n</body>\n\n</html>",
+      "strEditMode" : "html"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "bindings" : {
+        "html" : "htmlTemplate"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false
+}

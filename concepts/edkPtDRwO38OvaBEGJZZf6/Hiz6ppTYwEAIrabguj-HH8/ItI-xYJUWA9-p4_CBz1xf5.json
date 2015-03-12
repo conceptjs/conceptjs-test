@@ -1,0 +1,17 @@
+{
+  "uri" : "local://ItI-xYJUWA9-p4_CBz1xf5/",
+  "name" : "test init method",
+  "category" : "",
+  "parent" : "local://Hiz6ppTYwEAIrabguj-HH8/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "script",
+    "expr" : {
+      "script" : "$cjs(\"local://v7dqpleUa68GWKjFJslRTC/\");"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false,
+  "activeScript" : ""
+}

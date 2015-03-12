@@ -1,0 +1,51 @@
+{
+  "uri" : "local://C6Wi3ssdLv8tjKG40kjcZB/",
+  "name" : "DebuggerError var isa error",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "tboolean",
+    "expr" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "tnumber",
+    "expr" : {
+      "num" : 12
+    }
+  }, {
+    "name" : "tstring",
+    "expr" : {
+      "str" : "test string"
+    }
+  }, {
+    "name" : "tvariable",
+    "expr" : {
+      "lookup" : "tstring",
+      "sub" : {
+        "concept" : "home"
+      }
+    }
+  }, {
+    "name" : "tjson",
+    "expr" : {
+      "json" : {
+        "foo" : "bar"
+      }
+    }
+  }, {
+    "name" : "nullConc",
+    "expr" : {
+      "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/"
+    }
+  }, {
+    "name" : "testconc",
+    "expr" : {
+      "concept" : "local://XOVj4ap40W94tqO_MyIH23/"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

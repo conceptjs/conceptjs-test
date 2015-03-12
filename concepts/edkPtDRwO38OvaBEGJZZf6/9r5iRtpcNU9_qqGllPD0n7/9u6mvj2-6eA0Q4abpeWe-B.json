@@ -1,0 +1,38 @@
+{
+  "uri" : "local://9u6mvj2-6eA0Q4abpeWe-B/",
+  "name" : "Test Get Resource",
+  "category" : "",
+  "parent" : "local://9r5iRtpcNU9_qqGllPD0n7/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "serverSideGet",
+    "expr" : {
+      "script" : "data.resourceData = $cjs.getResource({uri: '/common/test/IkTMQjkLhcA15aieZVgKnE/', type: 'GETSTR'});"
+    }
+  }, {
+    "name" : "htmlTemplate",
+    "expr" : {
+      "str" : "<html>\n    <head>\n        \n    </head>\n    \n    <body>\n        <h2>Resource Data from Client:</h2>\n        <div id=\"clientdata\"></div>\n        <h2>Resource Data from Server:</h2>\n        <div id=\"serverdata\">\n            {{{serverData}}}\n        </div>\n    </body>\n    \n    <script>\n        $cjs.getResource({\n            uri: '/common/test/IkTMQjkLhcA15aieZVgKnE/',\n            done: function(data){\n                $(\"#clientdata\").html(data);\n            },\n            fail: function(jqXHR, textStatus, errorThrown){\n                console.log(\"get resource failed, status:\" + textStatus + \", error:\" + errorThrown + \", server response:\" + ((jqXHR.responseText)?jqXHR.responseText:\"\"));\n            }\n        });\n    </script>\n</html>",
+      "strEditMode" : "html"
+    }
+  }, {
+    "name" : "_page_propertyMap",
+    "expr" : {
+      "script" : "return {serverData: data.resourceData};"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/Xfh2VQ4HSK9klqbqqR-eBB/",
+      "bindings" : {
+        "htmlTemplate" : "htmlTemplate",
+        "propertyMap" : "_page_propertyMap"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false
+}

@@ -1,0 +1,22 @@
+{
+  "uri" : "local://KEnn0dYvUh8WMKpUtyBiwE/",
+  "name" : "A test concept to be deleted",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "a",
+    "expr" : {
+      "num" : 1
+    }
+  }, {
+    "name" : "b",
+    "expr" : {
+      "str" : "foo",
+      "strEditMode" : ""
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

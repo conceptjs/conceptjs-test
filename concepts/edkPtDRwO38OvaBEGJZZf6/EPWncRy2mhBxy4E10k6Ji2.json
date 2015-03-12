@@ -1,0 +1,19 @@
+{
+  "uri" : "local://EPWncRy2mhBxy4E10k6Ji2/",
+  "name" : "DebuggerError errorlambda",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "a",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  } ],
+  "vars" : [ {
+    "name" : "error_script",
+    "expr" : {
+      "script" : "//this is an error\n\nreturn unknownerror;"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : true
+}

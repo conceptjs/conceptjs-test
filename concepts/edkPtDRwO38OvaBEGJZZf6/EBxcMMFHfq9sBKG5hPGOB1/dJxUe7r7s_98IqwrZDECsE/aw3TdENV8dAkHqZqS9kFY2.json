@@ -1,0 +1,14 @@
+{
+  "uri" : "local://aw3TdENV8dAkHqZqS9kFY2/",
+  "name" : "lambda C",
+  "category" : "",
+  "parent" : "local://dJxUe7r7s_98IqwrZDECsE/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "c",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  } ],
+  "vars" : [ ],
+  "isas" : [ ],
+  "isLambda" : true
+}

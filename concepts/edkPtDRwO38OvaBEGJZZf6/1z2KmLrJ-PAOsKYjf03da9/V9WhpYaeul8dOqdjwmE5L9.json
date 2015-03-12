@@ -1,0 +1,32 @@
+{
+  "uri" : "local://V9WhpYaeul8dOqdjwmE5L9/",
+  "name" : "LambdaTest Example",
+  "category" : "",
+  "parent" : "local://1z2KmLrJ-PAOsKYjf03da9/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_test_a",
+    "expr" : {
+      "str" : "foo"
+    }
+  }, {
+    "name" : "_test_b",
+    "expr" : {
+      "num" : 451
+    }
+  }, {
+    "name" : "test",
+    "expr" : {
+      "concept" : "local://1z2KmLrJ-PAOsKYjf03da9/",
+      "bindings" : {
+        "a" : "_test_a",
+        "b" : "_test_b"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "test"
+  } ],
+  "isLambda" : false
+}

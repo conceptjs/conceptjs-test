@@ -1,0 +1,23 @@
+{
+  "uri" : "local://pNnrW5MufZ9hZKI_JUZtqF/",
+  "name" : "Proxy Method lambda concept",
+  "category" : "",
+  "parent" : "local://Hiz6ppTYwEAIrabguj-HH8/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "a",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  }, {
+    "name" : "b",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  }, {
+    "name" : "c",
+    "type" : "/common/types/74mIR2uFvPAAiqCdiDkp18/"
+  } ],
+  "vars" : [ ],
+  "isas" : [ {
+    "concept" : "local://hEvFn9kSLrBkFaTblVLmC9/"
+  } ],
+  "isLambda" : true,
+  "activeScript" : "{\n\tupdateA : function(newA){\n\t\thome.prop(\"a\", newA);\n\t},    \n\t    \n\tupdateAll : function(newObj){\n\t\thome.prop(\"a\", (newObj.a));\n\t\thome.prop(\"b\", (newObj.b));\n\t\thome.prop(\"c\", (newObj.c));\n\t},\n\t    \n\tmethodWReturn : function(str, num, boolValue, objectVal){\n\t\tvar returnStr = str + \":\" + num.toString() + \":\" + boolValue.toString() + \":\" + JSON.stringify(objectVal);\n\t\treturn returnStr;\n\t},\n\t\n\tinvalidUpdate : function(newA){\n\t\t$cjs(\"/test_user2/default/ims1MZM7TV9sp4L7MNfEq7/\").prop(\"a\", newA);\n\t}\n}"
+}

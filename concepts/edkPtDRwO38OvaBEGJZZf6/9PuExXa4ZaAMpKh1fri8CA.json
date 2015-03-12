@@ -1,0 +1,59 @@
+{
+  "uri" : "local://9PuExXa4ZaAMpKh1fri8CA/",
+  "name" : "DebuggerError vb isa error",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "tboolean",
+    "expr" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "tnumber",
+    "expr" : {
+      "num" : 12
+    }
+  }, {
+    "name" : "tstring",
+    "expr" : {
+      "str" : "test string"
+    }
+  }, {
+    "name" : "tvariable",
+    "expr" : {
+      "lookup" : "tstring",
+      "sub" : {
+        "concept" : "home"
+      }
+    }
+  }, {
+    "name" : "tjson",
+    "expr" : {
+      "json" : {
+        "foo" : "bar"
+      }
+    }
+  }, {
+    "name" : "nullConc",
+    "expr" : {
+      "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/"
+    }
+  }, {
+    "name" : "_testconc_model",
+    "expr" : {
+      "concept" : "local://XOVj4ap40W94tqO_MyIH23/"
+    }
+  }, {
+    "name" : "testconc",
+    "expr" : {
+      "concept" : "local://lvHnseysHj9Ila8Z6CDRGD/",
+      "bindings" : {
+        "model" : "_testconc_model"
+      }
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

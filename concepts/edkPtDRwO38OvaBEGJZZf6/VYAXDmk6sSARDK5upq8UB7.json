@@ -1,0 +1,26 @@
+{
+  "uri" : "local://VYAXDmk6sSARDK5upq8UB7/",
+  "name" : "Hello World with redirect",
+  "category" : "example",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "html",
+    "expr" : {
+      "str" : "Hello World <br>\n\nClick <a href=\"#\" onclick=\"$cjs.redirect('/common/core/t3yKFJG4-ZA7kaO1QHpmA4/'); return false;\">here</a> to redirect"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "bindings" : {
+        "html" : "html"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false
+}

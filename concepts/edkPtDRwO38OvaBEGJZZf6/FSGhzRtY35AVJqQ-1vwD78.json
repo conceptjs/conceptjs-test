@@ -1,0 +1,25 @@
+{
+  "uri" : "local://FSGhzRtY35AVJqQ-1vwD78/",
+  "name" : "ContinuationTest",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "model",
+    "type" : "local://1z2KmLrJ-PAOsKYjf03da9/"
+  } ],
+  "vars" : [ {
+    "name" : "aCalc",
+    "expr" : {
+      "lookup" : "a",
+      "sub" : {
+        "lookup" : "model",
+        "sub" : {
+          "concept" : "home"
+        }
+      }
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : true
+}

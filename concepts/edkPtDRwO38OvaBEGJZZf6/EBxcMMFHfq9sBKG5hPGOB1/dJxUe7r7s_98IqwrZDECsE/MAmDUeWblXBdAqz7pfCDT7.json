@@ -1,0 +1,27 @@
+{
+  "uri" : "local://MAmDUeWblXBdAqz7pfCDT7/",
+  "name" : "Test Case 3",
+  "category" : "",
+  "parent" : "local://dJxUe7r7s_98IqwrZDECsE/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_lambdaA_a",
+    "expr" : {
+      "str" : "",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "lambdaA",
+    "expr" : {
+      "concept" : "local://t7ibcbMvQK9PkaGAXJEq7D/",
+      "bindings" : {
+        "a" : "_lambdaA_a"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "lambdaA"
+  } ],
+  "isLambda" : false
+}

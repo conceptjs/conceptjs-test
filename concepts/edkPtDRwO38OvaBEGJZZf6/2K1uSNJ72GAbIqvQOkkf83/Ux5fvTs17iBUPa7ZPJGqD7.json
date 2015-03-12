@@ -1,0 +1,27 @@
+{
+  "uri" : "local://Ux5fvTs17iBUPa7ZPJGqD7/",
+  "name" : "Test Concept 2",
+  "category" : "",
+  "parent" : "local://2K1uSNJ72GAbIqvQOkkf83/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_testIndex_a",
+    "expr" : {
+      "str" : "boo",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "testIndex",
+    "expr" : {
+      "concept" : "local://a8T0Z995Xt8aTqagDqw8cC/",
+      "bindings" : {
+        "a" : "_testIndex_a"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "testIndex"
+  } ],
+  "isLambda" : false
+}

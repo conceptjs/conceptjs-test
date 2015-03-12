@@ -1,0 +1,19 @@
+{
+  "uri" : "local://lvHnseysHj9Ila8Z6CDRGD/",
+  "name" : "DebuggerError errorlambda model:isa.error",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "model",
+    "type" : "local://XOVj4ap40W94tqO_MyIH23/"
+  } ],
+  "vars" : [ {
+    "name" : "error_script",
+    "expr" : {
+      "script" : "//this is an error\n\nreturn unknownerror;"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : true
+}

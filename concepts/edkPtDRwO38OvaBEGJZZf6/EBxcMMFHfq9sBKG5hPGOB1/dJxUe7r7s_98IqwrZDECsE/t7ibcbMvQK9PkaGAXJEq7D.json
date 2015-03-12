@@ -1,0 +1,30 @@
+{
+  "uri" : "local://t7ibcbMvQK9PkaGAXJEq7D/",
+  "name" : "lambda A",
+  "category" : "",
+  "parent" : "local://dJxUe7r7s_98IqwrZDECsE/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "a",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  } ],
+  "vars" : [ {
+    "name" : "_lambdaB_b",
+    "expr" : {
+      "str" : "",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "lambdaB",
+    "expr" : {
+      "concept" : "local://kumqZsJeMAAzgqU-c2Qyp6/",
+      "bindings" : {
+        "b" : "_lambdaB_b"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "lambdaB"
+  } ],
+  "isLambda" : true
+}

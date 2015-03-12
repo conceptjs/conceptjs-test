@@ -1,0 +1,54 @@
+{
+  "uri" : "local://ACvBui6kJPAAMaMam7N70B/",
+  "name" : "Client JS Security Test",
+  "category" : "",
+  "parent" : "local://Hiz6ppTYwEAIrabguj-HH8/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "a",
+    "expr" : {
+      "str" : "hij"
+    }
+  }, {
+    "name" : "b",
+    "expr" : {
+      "num" : 456
+    }
+  }, {
+    "name" : "c",
+    "expr" : {
+      "bool" : false
+    }
+  }, {
+    "name" : "d",
+    "expr" : {
+      "json" : {
+        "foo" : "tar"
+      }
+    }
+  }, {
+    "name" : "test_scope_script",
+    "expr" : {
+      "script" : "//test access scope\n\n//console.logInfo(\"should not access:\" +$cjs.defn['local://n2psgkwfeL8nTaa869C6H0/']);\n\n//console.logInfo(\"should not see this:\" + _mode);"
+    }
+  }, {
+    "name" : "html",
+    "expr" : {
+      "str" : "<b>Try to run client javascript that read unauthorized concepts and update unauthorized concepts:</b>\n\n<script>\n     try{\n      console.log(\"should fail since common user do not have write access to test_user2 concepts\");\n      $cjs('/test_user2/default/ims1MZM7TV9sp4L7MNfEq7/').lookup('a').val('def');\n      $cjs.session.save();\n      }catch(error){\n          console.log(\"error:\"+error);\n      } \n\n     try{\n      console.log(\"should fail since common user do not have read access to test_user2 private concepts\");\n      console.log(\"private a=\"+$cjs('/test_user2/private/ii4m1Ne6MV8_7qmB4uLA-F/').lookup('a').val());\n     }catch(error){\n          console.log(\"error:\"+error);\n      } \n\n      console.log(\"should be ok since both test_user2 and common user has read access\");\n      console.log(\"a=\"+$cjs('/test_user2/default/ims1MZM7TV9sp4L7MNfEq7/').lookup('a').val());\n   \n       console.log(\"should write ok since both test_user2 and common user has write access\");\n\n        $cjs.session.discard();\n        $cjs(\"/test_user2/public/WTjMswKJfx8vm4zAxjy1N5/\").lookup('a').val('changed public value');\n        $cjs.session.save();\n</script>"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "bindings" : {
+        "html" : "html"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false,
+  "activeScript" : "{\n\tupdateA : function(newA){\n\t\thome.prop(\"a\", newA);\n\t},    \n\t    \n\tupdateAll : function(newObj){\n\t\thome.prop(\"a\", (newObj.a));\n\t\thome.prop(\"b\", (newObj.b));\n\t\thome.prop(\"c\", (newObj.c));\n\t},\n\t    \n\tmethodWReturn : function(str, num, boolValue, objectVal){\n\t\tvar returnStr = str + \":\" + num.toString() + \":\" + boolValue.toString() + \":\" + JSON.stringify(objectVal);\n\t\treturn returnStr;\n\t},\n\t\n\tinvalidUpdate : function(newA){\n\t\t$cjs(\"/test_user2/default/ims1MZM7TV9sp4L7MNfEq7/\").prop(\"a\", newA);\n\t},\n\t\n\tupdateD : function(newD){\n\t\thome.prop(\"d\", newD);\n\t}\n}"
+}

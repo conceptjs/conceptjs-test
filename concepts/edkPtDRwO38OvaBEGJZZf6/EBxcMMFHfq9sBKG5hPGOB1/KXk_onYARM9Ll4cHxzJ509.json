@@ -1,0 +1,16 @@
+{
+  "uri" : "local://KXk_onYARM9Ll4cHxzJ509/",
+  "name" : "Test Access JVM",
+  "category" : "",
+  "parent" : "local://EBxcMMFHfq9sBKG5hPGOB1/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "script",
+    "expr" : {
+      "script" : "//invalid script\n//var stealAuthClass = Java.type('com.lambdazen.eval.util.AuthUtil');\n//var intType = Java.type(\"int\");\n//importClass(java.awt.Frame);\n//importClass(\"com.lambdazen.eval.util.AuthUtil\");\n//var frame = new java.awt.Frame(\"hello\");\n//importPackage(com.lambdazen.eval.util);\n//importPackage(\"com.lambdazen.eval.util\");\n//var auth = AuthUtil;\n//var Gui = new JavaImporter(java.awt, javax.swing);\n//var r  = new java.lang.Runnable() {\n//    run: function() {\n//        print(\"running...\\n\");\n//    }\n//};\n//var stealVector = Packages.java.util.Vector;\n//var stealVector2 = java.util.Vector;\n//var stealAuth = com.lambdazen.eval.util.AuthUtil;\n//var stealAuth2= Class.forName(\"com.lambdazen.eval.util.AuthUtil\");\n//var anArray = [1, \"13\", false];\n//var javaIntArray = Java.to(anArray, \"int[]\");"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

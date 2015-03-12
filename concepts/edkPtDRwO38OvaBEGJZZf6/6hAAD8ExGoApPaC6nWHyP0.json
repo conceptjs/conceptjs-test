@@ -1,0 +1,20 @@
+{
+  "uri" : "local://6hAAD8ExGoApPaC6nWHyP0/",
+  "name" : "A test lambda concept to be deleted",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "foo",
+    "type" : "/common/types/TzKya_80pHAqAKKkMh-d89/"
+  }, {
+    "name" : "bar",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/",
+    "default" : {
+      "str" : ""
+    }
+  } ],
+  "vars" : [ ],
+  "isas" : [ ],
+  "isLambda" : true
+}

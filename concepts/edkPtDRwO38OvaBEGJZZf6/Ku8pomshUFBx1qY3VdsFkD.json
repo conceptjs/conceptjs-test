@@ -1,0 +1,16 @@
+{
+  "uri" : "local://Ku8pomshUFBx1qY3VdsFkD/",
+  "name" : "Simple Concept For Debugger Testing",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "a",
+    "expr" : {
+      "num" : 10
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

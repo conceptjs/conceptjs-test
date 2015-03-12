@@ -1,0 +1,16 @@
+{
+  "uri" : "local://sM3PPbehFgA3mKOPeSSb64/",
+  "name" : "Test Case 2",
+  "category" : "",
+  "parent" : "local://dJxUe7r7s_98IqwrZDECsE/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "A",
+    "expr" : {
+      "concept" : "local://VopyPx7ZUUA2eKJaMjOm07/"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

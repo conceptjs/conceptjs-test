@@ -1,0 +1,13 @@
+{
+  "uri" : "local://vvsMcetG-sAuj462W9gF3C/",
+  "name" : "C",
+  "category" : "",
+  "parent" : "local://dJxUe7r7s_98IqwrZDECsE/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ ],
+  "isas" : [ {
+    "concept" : "local://Jiv-u3XXkC84CakFmkkoD0/"
+  } ],
+  "isLambda" : false
+}

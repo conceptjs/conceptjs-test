@@ -1,0 +1,102 @@
+{
+  "uri" : "local://enWCBON1bEAoQKUj1bRr67/",
+  "name" : "DebuggerError vb error",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "tboolean",
+    "expr" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "tnumber",
+    "expr" : {
+      "num" : 12
+    }
+  }, {
+    "name" : "tstring",
+    "expr" : {
+      "str" : "test string"
+    }
+  }, {
+    "name" : "tvariable",
+    "expr" : {
+      "lookup" : "tstring",
+      "sub" : {
+        "concept" : "home"
+      }
+    }
+  }, {
+    "name" : "tjson",
+    "expr" : {
+      "json" : {
+        "foo" : "bar"
+      }
+    }
+  }, {
+    "name" : "_errorConc_a",
+    "expr" : {
+      "str" : "aa"
+    }
+  }, {
+    "name" : "_errorConc_b",
+    "expr" : {
+      "num" : 123
+    }
+  }, {
+    "name" : "errorConc",
+    "expr" : {
+      "concept" : "local://EPWncRy2mhBxy4E10k6Ji2/",
+      "bindings" : {
+        "a" : "_errorConc_a",
+        "b" : "_errorConc_b"
+      }
+    }
+  }, {
+    "name" : "nullConc",
+    "expr" : {
+      "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/"
+    }
+  }, {
+    "name" : "_testConc_a",
+    "expr" : {
+      "str" : "foo"
+    }
+  }, {
+    "name" : "_testConc_b",
+    "expr" : {
+      "num" : 21
+    }
+  }, {
+    "name" : "testConc",
+    "expr" : {
+      "concept" : "local://1z2KmLrJ-PAOsKYjf03da9/",
+      "bindings" : {
+        "a" : "_testConc_a",
+        "b" : "_testConc_b"
+      }
+    }
+  }, {
+    "name" : "testConc2",
+    "expr" : {
+      "concept" : "local://7W1izv7GKL9Ajqik9XK_mE/"
+    }
+  }, {
+    "name" : "testConc3",
+    "expr" : {
+      "lookup" : "binding",
+      "sub" : {
+        "lookup" : "testConc2",
+        "sub" : {
+          "concept" : "home"
+        }
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "errorConc"
+  } ],
+  "isLambda" : false
+}

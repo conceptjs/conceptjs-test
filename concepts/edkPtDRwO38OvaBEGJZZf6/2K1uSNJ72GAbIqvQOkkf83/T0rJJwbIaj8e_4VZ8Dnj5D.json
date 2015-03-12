@@ -1,0 +1,34 @@
+{
+  "uri" : "local://T0rJJwbIaj8e_4VZ8Dnj5D/",
+  "name" : "test index entry type",
+  "category" : "",
+  "parent" : "local://2K1uSNJ72GAbIqvQOkkf83/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_indexEntryType_indexUri",
+    "expr" : {
+      "str" : "local://a8T0Z995Xt8aTqagDqw8cC/",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_indexEntryType_fieldTypes",
+    "expr" : {
+      "str" : "{ \"simple\" : { \"type\" : \"concept\"},\n  \"bound\" : { \"type\" : \"concept\"}}",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "indexEntryType",
+    "expr" : {
+      "concept" : "/common/core/2ZCZ-kBJFDAkW4sQSVsBs8/",
+      "bindings" : {
+        "indexUri" : "_indexEntryType_indexUri",
+        "fieldTypes" : "_indexEntryType_fieldTypes"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "indexEntryType"
+  } ],
+  "isLambda" : false
+}

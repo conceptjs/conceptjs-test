@@ -1,0 +1,38 @@
+{
+  "uri" : "local://rDAT97qVVZBrW4-Sx9DehF/",
+  "name" : "Proxy Method of Bound Concept",
+  "category" : "",
+  "parent" : "local://Hiz6ppTYwEAIrabguj-HH8/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "_proxy_a",
+    "expr" : {
+      "str" : "hij"
+    }
+  }, {
+    "name" : "_proxy_b",
+    "expr" : {
+      "num" : 456
+    }
+  }, {
+    "name" : "_proxy_c",
+    "expr" : {
+      "bool" : false
+    }
+  }, {
+    "name" : "proxy",
+    "expr" : {
+      "concept" : "local://pNnrW5MufZ9hZKI_JUZtqF/",
+      "bindings" : {
+        "a" : "_proxy_a",
+        "b" : "_proxy_b",
+        "c" : "_proxy_c"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "proxy"
+  } ],
+  "isLambda" : false
+}

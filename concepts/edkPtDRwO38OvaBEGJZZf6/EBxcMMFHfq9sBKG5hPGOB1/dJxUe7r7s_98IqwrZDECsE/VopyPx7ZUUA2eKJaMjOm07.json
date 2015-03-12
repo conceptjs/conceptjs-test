@@ -1,0 +1,16 @@
+{
+  "uri" : "local://VopyPx7ZUUA2eKJaMjOm07/",
+  "name" : "A",
+  "category" : "",
+  "parent" : "local://dJxUe7r7s_98IqwrZDECsE/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "B",
+    "expr" : {
+      "concept" : "local://J2gchrE18Q9P1aPcWe72J6/"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

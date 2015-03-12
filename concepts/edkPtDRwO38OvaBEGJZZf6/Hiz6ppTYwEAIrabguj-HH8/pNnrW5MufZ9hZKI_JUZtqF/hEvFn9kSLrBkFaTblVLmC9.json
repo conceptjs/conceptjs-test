@@ -1,0 +1,36 @@
+{
+  "uri" : "local://hEvFn9kSLrBkFaTblVLmC9/",
+  "name" : "Proxy Method lambda concept view",
+  "category" : "",
+  "parent" : "local://pNnrW5MufZ9hZKI_JUZtqF/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "model",
+    "type" : "local://pNnrW5MufZ9hZKI_JUZtqF/"
+  } ],
+  "vars" : [ {
+    "name" : "html",
+    "expr" : {
+      "str" : "<b>Invoke Proxy Method to change var values:</b>\n<ul>\n    <li>invoke updateA, result of a is <span id=\"result1\"></span>\n    <li>invoke updateAll, result of all vars are <span id=\"result2\"></span>\n    <li>invoke updateWithReturn, return value is <span id=\"result3\"></span>\n</ul>\n<script>\n    $cjs('{{{modelUri}}}').execute('updateA', ['def']);\n    $cjs.clearCache();\n    $('#result1').text($cjs('{{{modelUri}}}').lookup('a').val());\n    $cjs('{{{modelUri}}}').execute('updateAll', [{\"a\" : \"hij\", \"b\" : 456, \"c\" : false} ]);\n     $cjs.clearCache();\n    var stub = $cjs('{{{modelUri}}}');\n    $('#result2').text(stub.lookup('a').val() + \",\" + stub.lookup('b').val().toString() + \",\" +stub.lookup('c').val().toString() );\n    var returnVal = $cjs('{{{modelUri}}}').execute('methodWReturn', ['a', 1, true, {\"foo\" : \"bar\"} ]);\n     $('#result3').text(JSON.stringify(returnVal));\n    \n    //invalid update\n   $cjs('{{{modelUri}}}').execute('invalidUpdate', ['def']); \n</script>"
+    }
+  }, {
+    "name" : "_page_propertyMap",
+    "expr" : {
+      "script" : "return {\"modelUri\": model.uri()};"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/Xfh2VQ4HSK9klqbqqR-eBB/",
+      "bindings" : {
+        "htmlTemplate" : "html",
+        "propertyMap" : "_page_propertyMap"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : true,
+  "activeScript" : ""
+}

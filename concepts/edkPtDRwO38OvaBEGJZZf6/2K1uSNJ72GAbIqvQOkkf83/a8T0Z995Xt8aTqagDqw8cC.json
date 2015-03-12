@@ -1,0 +1,78 @@
+{
+  "uri" : "local://a8T0Z995Xt8aTqagDqw8cC/",
+  "name" : "Test Lambda Concept",
+  "category" : "",
+  "parent" : "local://2K1uSNJ72GAbIqvQOkkf83/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "a",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  } ],
+  "vars" : [ {
+    "name" : "simple",
+    "expr" : {
+      "concept" : "/common/core/5fU7LQznBS9wM4vS3baBN5/"
+    }
+  }, {
+    "name" : "_bound_pgnMoves",
+    "expr" : {
+      "str" : "",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_bound_notes",
+    "expr" : {
+      "str" : "",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "_bound_wikipediaUrl",
+    "expr" : {
+      "str" : "",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "bound",
+    "expr" : {
+      "concept" : "/common/core/EZ7fX6FJWuAVUqSbX_dy67/",
+      "bindings" : {
+        "pgnMoves" : "_bound_pgnMoves",
+        "notes" : "_bound_notes",
+        "wikipediaUrl" : "_bound_wikipediaUrl"
+      }
+    }
+  }, {
+    "name" : "_indexEntry_type",
+    "expr" : {
+      "concept" : "local://T0rJJwbIaj8e_4VZ8Dnj5D/"
+    }
+  }, {
+    "name" : "indexEntry",
+    "expr" : {
+      "concept" : "/common/core/0mSE4ISzLM8fkKj3BVBy7A/",
+      "bindings" : {
+        "type" : "_indexEntry_type"
+      }
+    }
+  }, {
+    "name" : "_page_html",
+    "expr" : {
+      "str" : "This is a test for index concept type field.",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "bindings" : {
+        "html" : "_page_html"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "indexEntry"
+  }, {
+    "var" : "page"
+  } ],
+  "isLambda" : true
+}

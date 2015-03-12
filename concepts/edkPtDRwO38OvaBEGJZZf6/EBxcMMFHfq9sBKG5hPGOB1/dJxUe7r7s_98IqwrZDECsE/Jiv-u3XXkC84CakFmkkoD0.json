@@ -1,0 +1,30 @@
+{
+  "uri" : "local://Jiv-u3XXkC84CakFmkkoD0/",
+  "name" : "continue A",
+  "category" : "",
+  "parent" : "local://dJxUe7r7s_98IqwrZDECsE/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "model",
+    "type" : "local://vvsMcetG-sAuj462W9gF3C/"
+  } ],
+  "vars" : [ {
+    "name" : "_lambdaA_a",
+    "expr" : {
+      "str" : "",
+      "strEditMode" : ""
+    }
+  }, {
+    "name" : "lambdaA",
+    "expr" : {
+      "concept" : "local://t7ibcbMvQK9PkaGAXJEq7D/",
+      "bindings" : {
+        "a" : "_lambdaA_a"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "lambdaA"
+  } ],
+  "isLambda" : true
+}

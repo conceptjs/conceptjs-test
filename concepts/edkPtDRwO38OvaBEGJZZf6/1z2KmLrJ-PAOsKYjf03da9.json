@@ -1,0 +1,21 @@
+{
+  "uri" : "local://1z2KmLrJ-PAOsKYjf03da9/",
+  "name" : "LambdaTest Changed",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "a",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  }, {
+    "name" : "b",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/"
+  } ],
+  "vars" : [ ],
+  "isas" : [ {
+    "concept" : "local://FSGhzRtY35AVJqQ-1vwD78/"
+  }, {
+    "concept" : "local://rE_tiq6oBCBIZKuI6nXDu7/"
+  } ],
+  "isLambda" : true
+}

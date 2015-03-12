@@ -1,0 +1,16 @@
+{
+  "uri" : "local://isJpBNLz5DBoyqZWhlinGF/",
+  "name" : "Server Logs Tests",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "script",
+    "expr" : {
+      "script" : "console.log(\"this is server-side javascript logs\");\n\nconsole.logInfo(\"this is server-side info messages\");"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}

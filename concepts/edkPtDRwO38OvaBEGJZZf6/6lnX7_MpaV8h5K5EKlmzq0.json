@@ -1,0 +1,178 @@
+{
+  "uri" : "local://6lnX7_MpaV8h5K5EKlmzq0/",
+  "name" : "NewTestUIConcept",
+  "category" : "my_test4",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ {
+    "name" : "new_lv_boolean_mandate",
+    "type" : "/common/types/74mIR2uFvPAAiqCdiDkp18/"
+  }, {
+    "name" : "lv_number",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/"
+  }, {
+    "name" : "lv_json",
+    "type" : "/common/types/TzKya_80pHAqAKKkMh-d89/"
+  }, {
+    "name" : "lv_concept",
+    "type" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/"
+  }, {
+    "name" : "new_lv_string_mandate",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  }, {
+    "name" : "lv_string_option",
+    "type" : "/common/types/t6plZKh35i93o453wH2NX2/"
+  }, {
+    "name" : "lv_boolean_option_true",
+    "type" : "/common/types/74mIR2uFvPAAiqCdiDkp18/",
+    "default" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "lv_boolean_option_false",
+    "type" : "/common/types/74mIR2uFvPAAiqCdiDkp18/",
+    "default" : {
+      "bool" : false
+    }
+  }, {
+    "name" : "new_rlvar",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
+    "default" : {
+      "num" : 3
+    }
+  }, {
+    "name" : "new_lvar",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
+    "default" : {
+      "num" : 5
+    }
+  }, {
+    "name" : "lv_concept_option",
+    "type" : "/common/core/EGAdTLw7QL88Qaa5A2uQ94/",
+    "default" : {
+      "concept" : "/common/core/qUyEas_wyy8VBqipYQVuHA/"
+    }
+  }, {
+    "name" : "v_json",
+    "type" : "/common/types/TzKya_80pHAqAKKkMh-d89/",
+    "default" : {
+      "json" : {
+        "foo" : "bar"
+      }
+    }
+  }, {
+    "name" : "new_v",
+    "type" : "/common/types/dhi51l2JPSBj_qRWtXgCP3/",
+    "default" : {
+      "num" : 0
+    }
+  } ],
+  "vars" : [ {
+    "name" : "v_boolean_true",
+    "expr" : {
+      "bool" : true
+    }
+  }, {
+    "name" : "v_boolean_false",
+    "expr" : {
+      "bool" : false
+    }
+  }, {
+    "name" : "v_string",
+    "expr" : {
+      "str" : "test_123"
+    }
+  }, {
+    "name" : "v_number",
+    "expr" : {
+      "num" : 4
+    }
+  }, {
+    "name" : "v_json",
+    "expr" : {
+      "json" : {
+        "foo" : "bar"
+      }
+    }
+  }, {
+    "name" : "v_variable",
+    "expr" : {
+      "lookup" : "v_st",
+      "sub" : {
+        "concept" : "home"
+      }
+    }
+  }, {
+    "name" : "_v_new_concept_html",
+    "expr" : {
+      "str" : "test page"
+    }
+  }, {
+    "name" : "v_new_concept",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "bindings" : {
+        "html" : "_v_new_concept_html"
+      }
+    }
+  }, {
+    "name" : "_v_concept_symbol",
+    "expr" : {
+      "str" : "b_symbol"
+    }
+  }, {
+    "name" : "_v_concept_name",
+    "expr" : {
+      "str" : "b_name"
+    }
+  }, {
+    "name" : "_v_concept_atomicNumber",
+    "expr" : {
+      "num" : 123
+    }
+  }, {
+    "name" : "_v_concept_atomicWeight",
+    "expr" : {
+      "str" : "b_weight"
+    }
+  }, {
+    "name" : "_v_concept_wikipediaUrl",
+    "expr" : {
+      "str" : "b_url"
+    }
+  }, {
+    "name" : "_v_concept_imageUrl",
+    "expr" : {
+      "str" : ""
+    }
+  }, {
+    "name" : "_v_concept_wikiDataID",
+    "expr" : {
+      "str" : "b_id"
+    }
+  }, {
+    "name" : "v_concept",
+    "expr" : {
+      "concept" : "/common/core/ylI2qgxB3YACI415AGovqF/",
+      "bindings" : {
+        "symbol" : "_v_concept_symbol",
+        "name" : "_v_concept_name",
+        "atomicNumber" : "_v_concept_atomicNumber",
+        "atomicWeight" : "_v_concept_atomicWeight",
+        "wikipediaUrl" : "_v_concept_wikipediaUrl",
+        "imageUrl" : "_v_concept_imageUrl",
+        "wikiDataID" : "_v_concept_wikiDataID"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "v_st",
+    "oncVar" : "v_string"
+  }, {
+    "concept" : "/common/core/3Q8cEdtRpV8q34c2JWIVs6/",
+    "oncVar" : "v"
+  }, {
+    "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/"
+  } ],
+  "isLambda" : true
+}

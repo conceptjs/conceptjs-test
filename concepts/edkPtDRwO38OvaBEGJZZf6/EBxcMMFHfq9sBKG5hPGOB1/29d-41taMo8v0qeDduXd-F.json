@@ -1,0 +1,27 @@
+{
+  "uri" : "local://29d-41taMo8v0qeDduXd-F/",
+  "name" : "sandbox test",
+  "category" : "",
+  "parent" : "local://EBxcMMFHfq9sBKG5hPGOB1/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "htmlTemplate",
+    "expr" : {
+      "str" : "<script>\n    $.get(\"http://en.wikipedia.org/wiki/Beryllium\", function(data){\n        console.logInfo(\"<<<<<<<<<<<<<<<<<<<<<<<<<<return HTML:\"+data);\n    })\n</script>",
+      "strEditMode" : "html"
+    }
+  }, {
+    "name" : "page",
+    "expr" : {
+      "concept" : "/common/core/iduwOQ2KZv8MWqamwqb6AE/",
+      "bindings" : {
+        "html" : "htmlTemplate"
+      }
+    }
+  } ],
+  "isas" : [ {
+    "var" : "page"
+  } ],
+  "isLambda" : false
+}

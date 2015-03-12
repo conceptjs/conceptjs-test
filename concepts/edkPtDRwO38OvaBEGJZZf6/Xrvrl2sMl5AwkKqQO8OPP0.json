@@ -1,0 +1,16 @@
+{
+  "uri" : "local://Xrvrl2sMl5AwkKqQO8OPP0/",
+  "name" : "DebuggerError error",
+  "category" : "",
+  "parent" : "local://edkPtDRwO38OvaBEGJZZf6/",
+  "flags" : "U",
+  "lvars" : [ ],
+  "vars" : [ {
+    "name" : "error_script",
+    "expr" : {
+      "script" : "//this is an error\n\nreturn unknownerror;"
+    }
+  } ],
+  "isas" : [ ],
+  "isLambda" : false
+}
